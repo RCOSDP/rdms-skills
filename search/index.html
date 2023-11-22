@@ -329,7 +329,7 @@ function csv_array_job4(data) {
 	}
 	let insertElement = ''; //テーブルタグに表示する用の変数
 	dataArray.forEach((element) => { //配列の中身を表示
-		if (element.includes("全職種（共通）") || element.find(value => value.match(/IT/)) || element.includes("スキルID") ){
+		if (element.includes("全職種（共通）") || element.find(value => value.match(/RDM/)) || element.includes("スキルID") ){
 	if (phase0.checked){
 		const elements = document.getElementsByName("options");		
 		insertElement += '<tr>';
