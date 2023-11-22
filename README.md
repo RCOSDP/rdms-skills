@@ -25,7 +25,7 @@ ii．各機関の状況に合わせた「組織的な支援・連携体制」の
 
 ## このサイトの構成
 
-RDM標準スキル一覧表[link]：最新版の標準スキルに基づく検索ページ
+[RDM標準スキル一覧表](https://rcosdp.github.io/rdms-skills/search/)：最新版の標準スキルに基づく検索ページ
 
 occupation.csv：業務を担いうる職種の略称と説明
 
