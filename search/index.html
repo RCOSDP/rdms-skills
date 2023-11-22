@@ -35,8 +35,8 @@ td {
 <h4><a href="https://github.com/RCOSDP/rdm-skills-mockup#readme" target="_blank">研究データ管理支援人材に求められる標準スキル</a></h4>
 <p></p>
 
-<h4>スキルの追加や修正を希望する場合は、以下へ投稿してください</h4>
-<h4><a href="https://github.com/RCOSDP/rdm-skills-mockup/issues" target="_blank">Github RDMスキル Issue</a></h4>
+<h4>スキルの追加や修正を希望する場合は、READMEへ書かれているMLへご連絡ください。</h4>
+<h4><a href="https://github.com/RCOSDP/rdm-skills-mockup#readme" target="_blank">Github RDMスキル Issue</a></h4>
 <p></p>
 
 <p>以下でキーワード、職種（現在は3つの職種のみ対応）、研究段階別にスキルを絞りこむことができます。</p>
@@ -74,16 +74,16 @@ td {
 function butotnClick(){
   if (job0.checked){
     console.log('すべて');
-    csv_data("https://raw.githubusercontent.com/M-Furu/rdmtestpage/main/rdmskill11.csv");
+    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskillforsearch.csv");
   } else if (job1.checked){
     console.log("全職種共通");
-    csv_data("https://raw.githubusercontent.com/M-Furu/rdmtestpage/main/rdmskill11.csv");
+    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskillforsearch.csv");
   } else if (job2.checked){
     console.log("URA");
-    csv_data("https://raw.githubusercontent.com/M-Furu/rdmtestpage/main/rdmskill11.csv");
+    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskillforsearch.csv");
   } else if (document.getElementById('search').value !== null){
     console.log("キーワード");
-    csv_data("https://raw.githubusercontent.com/M-Furu/rdmtestpage/main/rdmskill11.csv");
+    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskillforsearch.csv");
   }
 }
 
@@ -97,7 +97,7 @@ let checkButton = document.getElementById('checkButton');
 checkButton.addEventListener('click', butotnClick);
 
 
-csv_data("https://raw.githubusercontent.com/M-Furu/rdmtestpage/main/rdmskill11.csv");// csvのパス
+csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskillforsearch.csv");// csvのパス
 
 const output_csv = document.getElementById('color_list');
 
