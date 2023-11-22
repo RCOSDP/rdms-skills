@@ -329,43 +329,7 @@ function csv_array_job4(data) {
 	}
 	let insertElement = ''; //テーブルタグに表示する用の変数
 	dataArray.forEach((element) => { //配列の中身を表示
-		if (element.includes("全職種（共通）") || element.find(value => value.match(/RDM/)) || element.includes("スキルID") ){
-	if (phase0.checked){
-		const elements = document.getElementsByName("options");		
-		insertElement += '<tr>';
-		element.forEach((childElement) => {
-			insertElement += `<td>${childElement}</td>`
-		});
-		insertElement += '</tr>';
-	} else if(phase1.checked){
-		if (element.includes("全段階（共通）") || element.includes("スキルID") ){
-		const elements = document.getElementsByName("options");		
-		insertElement += '<tr>';
-		element.forEach((childElement) => {
-			insertElement += `<td>${childElement}</td>`
-		});
-		insertElement += '</tr>';
-		};
-	} else if(phase2.checked){
-		if (element.find(value => value.match(/研究前/)) || element.includes("スキルID") ){
-		const elements = document.getElementsByName("options");		
-		insertElement += '<tr>';
-		element.forEach((childElement) => {
-			insertElement += `<td>${childElement}</td>`
-		});
-		insertElement += '</tr>';
-		};
-	} else if(phase3.checked){
-		if (element.includes("研究中") || element.includes("スキルID") ){
-		const elements = document.getElementsByName("options");		
-		insertElement += '<tr>';
-		element.forEach((childElement) => {
-			insertElement += `<td>${childElement}</td>`
-		});
-		insertElement += '</tr>';
-		};
-	} else if(phase4.checked){
-		if (element.includes("研究後") || element.includes("スキルID") ){
+		if (element.includes("全職種（共通）") || element.find(value => value.match(/IT/)) || element.includes("スキルID") ){
 		const elements = document.getElementsByName("options");		
 		insertElement += '<tr>';
 		element.forEach((childElement) => {
