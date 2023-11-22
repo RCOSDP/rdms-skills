@@ -39,7 +39,7 @@ td {
 <h4><a href="https://github.com/RCOSDP/rdms-skills#%E6%A8%99%E6%BA%96%E3%82%B9%E3%82%AD%E3%83%AB%E3%81%B8%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%82%84%E4%BF%AE%E6%AD%A3%E3%81%AE%E3%81%94%E6%8F%90%E6%A1%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" target="_blank">標準スキルへの追加や修正のご提案について</a></h4>
 <p></p>
 
-<p>以下でキーワード、職種（現在は2つの職種のみ対応）、研究段階別にスキルを絞りこむことができます。</p>
+<p>以下でキーワード、職種（現在は3つの職種のみ対応）、研究段階別にスキルを絞りこむことができます。</p>
 <p>職種と研究段階別の掛け合わせでの検索も可能です。</p>
 	
 <h4>キーワード検索</h4>
@@ -51,7 +51,7 @@ td {
 <label><input type="radio" name="job" id="job1">共通</label>
 <label><input type="radio" name="job" id="job2">URA</label>
 <label><input type="radio" name="job" id="job3">RDM</label>
-<!--<label><input type="radio" name="job" id="job4">IT</label>-->
+<label><input type="radio" name="job" id="job4">IT</label>
 </div>
 <p></p>
 <div>
@@ -79,6 +79,12 @@ function butotnClick(){
     console.log("全職種共通");
     csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskill11.csv");
   } else if (job2.checked){
+    console.log("URA");
+    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskill11.csv");
+  } else if (job3.checked){
+    console.log("URA");
+    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskill11.csv");
+  } else if (job4.checked){
     console.log("URA");
     csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskill11.csv");
   } else if (document.getElementById('search').value !== null){
