@@ -74,16 +74,16 @@ td {
 function butotnClick(){
   if (job0.checked){
     console.log('すべて');
-    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskillforsearch.csv");
+    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskill11.csv");
   } else if (job1.checked){
     console.log("全職種共通");
-    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskillforsearch.csv");
+    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskill11.csv");
   } else if (job2.checked){
     console.log("URA");
-    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskillforsearch.csv");
+    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskill11.csv");
   } else if (document.getElementById('search').value !== null){
     console.log("キーワード");
-    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskillforsearch.csv");
+    csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskill11.csv");
   }
 }
 
@@ -97,7 +97,7 @@ let checkButton = document.getElementById('checkButton');
 checkButton.addEventListener('click', butotnClick);
 
 
-csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskillforsearch.csv");// csvのパス
+csv_data("https://raw.githubusercontent.com/rcosdp/rdms-skills/main/search/rdmskill11.csv");// csvのパス
 
 const output_csv = document.getElementById('color_list');
 
