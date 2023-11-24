@@ -63,7 +63,7 @@ RDMに実際に関与する/今後その可能性がある/関心がある支援
 
 RDMに実際に関与する/今後その可能性がある/関心がある各組織が、各々抱える、異なる組織・文化的背景もふまえて、その実践の結成果を、今回提示した「標準スキル」に加えて、内容をさらに発展させる。
 
-<img width="708" alt="研究データ管理支援人材に求められる標準スキルの改善モデル" src="https://github.com/RCOSDP/rdm-skills-mockup/assets/93890687/628188d6-3ac0-46de-a0fc-0c1967061f18">
+<img width="708" alt="研究データ管理支援人材に求められる標準スキルの改善モデル" src="https://github.com/RCOSDP/rdms-skills/blob/main/images/fig1.png">
 
 
 【図２】研究データ管理支援人材に求められる標準スキルの改善モデル
