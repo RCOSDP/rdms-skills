@@ -384,6 +384,31 @@ function csv_array_job4(data) {
 	});
 	output_csv.innerHTML = insertElement; // 表示
 }
+
+function csv_array_keyword(data) {
+const dataArray = []; //配列を用意
+	const dataString = data.split('\n'); //改行で分割
+	for (let i = 0; i < dataString.length; i++) { //あるだけループ
+		dataArray[i] = dataString[i].split(',');
+	}
+	let insertElement = ''; //テーブルタグに表示する用の変数
+	dataArray.forEach((element) => { //配列の中身を表示
+		//if (element.includes(document.getElementById('search').value) || element.includes("スキルID") ){
+		if (element.find(value => value.match(document.getElementById('search').value)) || element.includes("スキルID") ){
+		const elements = document.getElementsByName("options");	
+		console.log(element);
+		console.log(1);
+		insertElement += '<tr>';
+		element.forEach((childElement) => {
+			insertElement += `<td>${childElement}</td>`
+			//console.log(childElement);
+		});
+		insertElement += '</tr>';
+		}
+	});
+	output_csv.innerHTML = insertElement; // 表示
+}
+
 </script>
 
 
